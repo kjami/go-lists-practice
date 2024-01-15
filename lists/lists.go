@@ -44,4 +44,12 @@ func ExecuteLists() {
 	// Append additional items - This will create a new array
 	dynamicArr = append(dynamicArr, 4, 5, 6)
 	fmt.Println(dynamicArr) // 1, 2, 3, 4, 5, 6
+
+	// Adding two slices
+	floatArr := [2]float64{1.99, 2.99}
+	floatArr2 := []float64{4.99, 9.99}
+	combinedArr := append(floatArr[:], floatArr2...)
+
+	fmt.Println(combinedArr)
+	practiceExercise()
 }
