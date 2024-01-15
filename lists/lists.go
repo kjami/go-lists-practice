@@ -38,4 +38,10 @@ func ExecuteLists() {
 	fmt.Println(len(secondSlicedStrArr), cap(secondSlicedStrArr), secondSlicedStrArr)
 	firstSlicedStrArr = firstSlicedStrArr[:5] // "one", "two", "three", "four", "five"
 	fmt.Println(len(firstSlicedStrArr), cap(firstSlicedStrArr), firstSlicedStrArr)
+
+	// Initialize array without specifying length
+	var dynamicArr []int = []int{1, 2, 3}
+	// Append additional items - This will create a new array
+	dynamicArr = append(dynamicArr, 4, 5, 6)
+	fmt.Println(dynamicArr) // 1, 2, 3, 4, 5, 6
 }
