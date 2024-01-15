@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"example.com/go-lists-practice/lists"
+)
 
 func main() {
-	fmt.Println("list practive - arrays, slices, maps")
+	lists.ExecuteLists()
 }
